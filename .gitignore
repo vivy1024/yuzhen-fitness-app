@@ -1,0 +1,246 @@
+# ===================================
+# Build Body 项目 - Git 忽略文件
+# ===================================
+
+# ===== 系统文件 =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# ===== IDE 配置文件 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+.qoder/
+.augment/
+.trae/
+
+# ===== 依赖管理 =====
+# Laravel/PHP 依赖
+laragon/www/fitness-app-backend/vendor/
+laragon/www/fitness-app-backend/composer.lock
+
+# Node.js 依赖
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python 依赖
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===== 环境配置文件 =====
+.env
+.env.local
+.env.*.local
+.env.backup
+laragon/www/fitness-app-backend/.env
+laragon/www/fitness-app-backend/.env.local
+laragon/www/fitness-app-backend/.env.*.local
+
+# ===== 日志文件 =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+laragon/www/fitness-app-backend/storage/logs/
+
+# ===== 缓存文件 =====
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.nyc_output
+coverage/
+*.cover
+.hypothesis/
+
+# ===== 测试结果 =====
+test-results/
+test-reports/
+junit.xml
+coverage.xml
+*.cover
+
+# ===== 数据文件 =====
+# 大型数据文件
+fitness_data/
+data/musclewiki/exercises/
+complete_training_data/
+app_design/
+data/knowledge/
+
+# 用户上传文件
+laragon/www/fitness-app-backend/storage/app/public/uploads/
+laragon/www/fitness-app-backend/storage/app/public/exercises_v2/
+user_profiles/
+
+# ===== 数据库文件 =====
+# SQLite数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# MySQL数据文件
+*.sql
+*.dump
+*.bak
+
+# Laravel数据库
+laragon/www/fitness-app-backend/database/database.sqlite
+laragon/www/fitness-app-backend/storage/database.sqlite
+laragon/data/mysql/
+laragon/usr/mysql/
+laragon/etc/mysql/
+
+# ===== 构建输出 =====
+# 前端构建
+yuzhen-fitness/dist/
+yuzhen-fitness/build/
+yuzhen-fitness/.quasar/
+
+# Laravel 缓存
+laragon/www/fitness-app-backend/bootstrap/cache/
+laragon/www/fitness-app-backend/storage/framework/cache/
+laragon/www/fitness-app-backend/storage/framework/sessions/
+laragon/www/fitness-app-backend/storage/framework/views/
+
+# ===== 临时文件 =====
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+\#*#
+*.pid
+*.seed
+*.pid.lock
+
+# ===== 安全文件 =====
+security/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ===== 其他工具 =====
+tool/
+.conda/
+.tox/
+.pytest_cache/
+
+# ===== MCP 相关 =====
+# MCP 运行时数据
+mcp-servers/*/data/
+mcp-servers/*/logs/
+
+# ===== 报告和文档临时文件 =====
+*.md.backup
+*报告.md
+*完成报告.md
+*修复报告.md
+*清理完成报告.md
+mcp_health_report_*.json
+storage_zh_fields_issues.json
+
+# ===== 特定文件 =====
+test_fastmcp_simple.py
+2.0.0
+Makefile
+pytest.ini
+requirements.txt
+test-requirements.txt
+
+# ===== 图片文件 =====
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.ico
+
+# ===== 测试和报告目录 =====
+playwright-report/
+screenshots/
+test-results/
+tests/
+
+# ===== 其他大型文件 =====
+*.pdf
+*.zip
+*.tar.gz
+*.exe
+*.bat
+*.log
+*.mp4
+
+# ===== 特定目录 =====
+# 健身动作视频文件
+laragon/www/fitness-app-backend/public/storage/exercises_v2/
+# 提示词合集
+claude_cursor_trae通用智能体提示词合集/
+# Laragon开发环境
+laragon/bin/
+laragon/usr/
+laragon/etc/
+laragon/data/
+laragon/tmp/
+laragon/backup/
+laragon/dump.rdb
+laragon/laragon.exe
+laragon/EULA.txt
+
+# ===== 保留的重要文件 =====
+# 以下文件应该被追踪，即使匹配上面的模式
+!README.md
+!docs/
+!mcp-servers/*/README.md
+!mcp-servers/*/standardized_server.py
+!mcp-servers/*/server.py
+!laragon/www/fitness-app-backend/app/
+!laragon/www/fitness-app-backend/config/
+!laragon/www/fitness-app-backend/database/migrations/
+!laragon/www/fitness-app-backend/database/seeders/
+!laragon/www/fitness-app-backend/routes/
+!laragon/www/fitness-app-backend/resources/
+!laragon/www/fitness-app-backend/public/
+!laragon/www/fitness-app-backend/composer.json
+!laragon/www/fitness-app-backend/package.json
+!laragon/www/fitness-app-backend/artisan
+!yuzhen-fitness/src/
+!yuzhen-fitness/public/
+!yuzhen-fitness/package.json
+!yuzhen-fitness/quasar.config.js
+!yuzhen-fitness/index.html
